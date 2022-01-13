@@ -3,7 +3,7 @@ import java.util.Scanner;
 
 public class ForLoops {
     public static void main(String[] args) {
-        gangeTabel();
+        drawSquare(8,20);
 
 
     }
@@ -124,6 +124,9 @@ public class ForLoops {
         }
         for (int x = 1; x <= input; x++) {
             for (int y = 1; y <= input; y++) {
+                if (x * y < 10) {
+                    System.out.print(" ");
+                }
                 System.out.print(x * y + " ");
             }
             System.out.println();
@@ -131,28 +134,33 @@ public class ForLoops {
         gangeTabel();
 
 
-    }
-}
+    } public static void drawSquare (int height, int width) {
+        int y = 1;
 
-/*
-opgave 4.0 Gange tabel!
-Få et brugerinput imellem 1 og 9
-Lav en gange tabel udfra bruger inputtet
+        for (int stop = 1; stop < width;stop++){
+            System.out.print("*");
+            } for (int stop = 2;stop < height;stop++) {
+            System.out.println();
+            System.out.print("*");
+            for (int stop1 = 3; stop1 < width; stop1++) {
+                System.out.print(" ");
+            }
+            System.out.print("*");
+        }
+        System.out.println();
+        for (int stop = 1; stop < width;stop++){
+            System.out.print("*");
+        }
 
-Eksempel:
-brugerinput:
-6
+            }
 
-output:
 
-1  2  3  4  5  6
-2  4  6  8  10 12
-3  6  9  12 15 18
-4  8  12 16 20 24
-5  10 15 15 20 25
-6  12 18 24 30 36
+            }
 
- */
+
+
+
+
 
 
 
