@@ -3,13 +3,18 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/ArrayExercise/ArrayExercise.iml" filepath="$PROJECT_DIR$/ArrayExercise/ArrayExercise.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ArrayOpgaverAdvanced/ArrayOpgaverAdvanced.iml" filepath="$PROJECT_DIR$/ArrayOpgaverAdvanced/ArrayOpgaverAdvanced.iml" />
       <module fileurl="file://$PROJECT_DIR$/Booleans/Booleans.iml" filepath="$PROJECT_DIR$/Booleans/Booleans.iml" />
       <module fileurl="file://$PROJECT_DIR$/ClassRelationships/ClassRelationships.iml" filepath="$PROJECT_DIR$/ClassRelationships/ClassRelationships.iml" />
       <module fileurl="file://$PROJECT_DIR$/Classes/Classes.iml" filepath="$PROJECT_DIR$/Classes/Classes.iml" />
       <module fileurl="file://$PROJECT_DIR$/Encapsulation/Encapsulation.iml" filepath="$PROJECT_DIR$/Encapsulation/Encapsulation.iml" />
       <module fileurl="file://$PROJECT_DIR$/ForLoopsAdvanced/ForLoopsAdvanced.iml" filepath="$PROJECT_DIR$/ForLoopsAdvanced/ForLoopsAdvanced.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Guard/Guard.iml" filepath="$PROJECT_DIR$/Guard/Guard.iml" />
+      <module fileurl="file://$PROJECT_DIR$/IntLIstOpgave/IntLIstOpgave.iml" filepath="$PROJECT_DIR$/IntLIstOpgave/IntLIstOpgave.iml" />
       <module fileurl="file://$PROJECT_DIR$/Kode med sumsar.iml" filepath="$PROJECT_DIR$/Kode med sumsar.iml" />
+      <module fileurl="file://$PROJECT_DIR$/NumberReversal/NumberReversal.iml" filepath="$PROJECT_DIR$/NumberReversal/NumberReversal.iml" />
       <module fileurl="file://$PROJECT_DIR$/Strings/Strings.iml" filepath="$PROJECT_DIR$/Strings/Strings.iml" />
+      <module fileurl="file://$PROJECT_DIR$/inheritance/inheritance.iml" filepath="$PROJECT_DIR$/inheritance/inheritance.iml" />
     </modules>
   </component>
 </project>

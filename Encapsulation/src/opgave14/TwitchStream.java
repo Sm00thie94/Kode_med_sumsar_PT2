@@ -1,3 +1,5 @@
+package opgave14;
+
 public class TwitchStream {
     private String channelName;
     private int followers;

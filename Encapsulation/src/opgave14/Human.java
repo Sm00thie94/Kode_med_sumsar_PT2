@@ -1,3 +1,5 @@
+package opgave14;
+
 public class Human {
     private String name;
     private int cpr;

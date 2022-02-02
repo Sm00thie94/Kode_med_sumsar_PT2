@@ -1,6 +1,47 @@
-public class EncapsolationExersize {
-    public static void main(String[] args) {
+import BonusOpgave.Comment;
+import BonusOpgave.Video;
+import BonusOpgave.Youtube;
+import opgave14.Human;
+import opgave14.Player;
+import opgave14.TwitchStream;
 
+import java.util.Scanner;
+
+public class EncapsulationExersize {
+    public static void main(String[] args) {
+        Comment comment1 = new Comment("sumsar1812", "nice video");
+        Comment comment2 = new Comment("Chris", "Vild video");
+
+        Video video = new Video("Learning java", 120, 3);
+        video.addComment(comment1);
+        video.addComment(comment2);
+
+        Video video2 = new Video("Learning python", 3665, 0);
+        video2.addComment(new Comment("sumsar1812", "ad python"));
+
+        Youtube youtube = new Youtube();
+        youtube.addVideo(video);
+        youtube.addVideo(video2);
+
+
+        System.out.println("Velkommen til youtube");
+        Scanner scanner = new Scanner(System.in);
+
+        String input = "";
+        while (true) {
+            System.out.println("Søg efter video: ");
+            input = scanner.nextLine();
+            if (input.equalsIgnoreCase("quit")) {
+                break;
+            }
+            Video foundVideo = youtube.searchVideo(input);
+            if (foundVideo == null) {
+                System.out.println("Videoen med det navn blev ikke fundet");
+            } else {
+                foundVideo.printVideoInfo();
+            }
+
+        }
 
 
 
