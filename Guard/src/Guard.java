@@ -27,7 +27,6 @@ public class Guard {
         System.out.println("Penge: " + money);
         System.out.println("Rank: " + rank);
         System.out.println("Antal PV'er: " + pvAmount);
-        System.out.println("Level: " + level);
     } public int returnLevel () {
         return level;
     } public String returnRank (){
