@@ -14,7 +14,10 @@ public class Achievement {
         System.out.println( "----- " + name + " -----");
         System.out.println(description);
         System.out.println("Du fik en lønforhøjelse på: " + salaryIncrease);
-        System.out.println("Du klarede " + name + " den:" + date);
+        System.out.println("Du klarede \"" + name + "\" den: " + date);
+        System.out.println();
+    } public int getSalaryIncrease (){
+        return salaryIncrease;
     }
 
 
