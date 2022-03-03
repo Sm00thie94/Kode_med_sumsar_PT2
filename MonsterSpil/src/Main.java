@@ -7,11 +7,9 @@ public class Main {
         Scanner scanner = new Scanner(System.in);
         String playerName;
         playerName = scanner.nextLine();
-        PlayerInfo player = new PlayerInfo(1, 1, 1, false, 2, 2, 1, 5, playerName);
+        PlayerInfo player = new PlayerInfo(1, 1, 1, false, 2, 2, 1, 10, playerName);
         System.out.println("Starting game...");
         main.start(player);
-
-
 
 
     }
@@ -45,9 +43,10 @@ public class Main {
         System.out.println("or 2) Try to sleep through it, you have to wake up in an hour, and whatever is making that noise has to go away at some point.");
         while (true) {
             input = scanner.nextInt();
+            checkStats(input, player);
             if (input == 1) {
-               break;
-            } else if (input == 2){
+                break;
+            } else if (input == 2) {
                 System.out.println("You go back to sleep, and wake up the next day, feeling refreshed and excited for your meeting later that day");
                 System.out.println("You go through your morning routine, and get ready to walk out the door");
                 System.out.println("OOF");
@@ -59,9 +58,14 @@ public class Main {
             }
         }
         System.out.println("You get out of bed and open the door");
-        System.out.println("You get shocked to see a team of heavily armored people at the end of the hall, all with large rifles you recongnize from playing Counter:Strike ");
+        System.out.println("You get shocked to see a team of heavily armored people at the end of the hall, all with large rifles you recongnize from playing Call of duty ");
         System.out.println("They spot you, and start rushing toward you");
-        System.out.println("Do you 1) Close the door, and hurry back inside to your own handgun?");
+        System.out.println("Do you: 1) Close the door, and hurry back inside to your own handgun?");
         System.out.println("Or 2) Try to make it to the elevator, which is very close to your room, and away from whoever it is that's aprroaching you");
+    }
+    public void checkStats (int input, PlayerInfo player){
+        if (input == 0){
+            player.printPlayerStats();
+        }
     }
 }
